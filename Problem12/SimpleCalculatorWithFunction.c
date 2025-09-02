@@ -23,8 +23,15 @@ float multiplication(float x,float y)
 float division(float x,float y)
 {
     float div;
+    if (y==0)
+    {
+        printf("Undefine");
+    }
+    else 
+    {
     div = x / y;
     printf("Division = %.2f",div);
+    }
     return div;
 }
 int modulas(int x,int y)
