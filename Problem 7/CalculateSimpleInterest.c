@@ -1,4 +1,4 @@
-#include<stdio.h>
+n#include<stdio.h>
 int main()
 {
     double P,T,R,SI;
