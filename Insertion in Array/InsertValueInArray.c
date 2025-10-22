@@ -12,12 +12,20 @@ int main()
     }
     printf("Enter Position and Value: ");
     scanf("%d %d",&idx,&val);
-    for(int i=N ; i>idx-1 ; i--)
+    if(idx<0 || idx>N+1)
     {
-        arr[i] = arr[i-1];
+        printf("Invalid Position !!!");
     }
-    arr[idx-1] = val;
-    N++;
+    else
+    {
+        for(int i=N ; i>idx-1 ; i--)
+        {
+            arr[i] = arr[i-1];
+        }
+        arr[idx-1] = val;
+        N++;
+    }
+    printf("New Array: ");
     for(int i=0 ; i<N ; i++)
     {
         printf("%d ",arr[i]);
