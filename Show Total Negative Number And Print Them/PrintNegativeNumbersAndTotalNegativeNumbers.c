@@ -10,6 +10,14 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
+    for(int i=0 ; i<N ; i++)
+    {
+        if(arr[i]<0)
+        {
+            count++;
+        }
+    }
+    printf("Total negative numbers: %d\n",count);
     printf("Negative Numbers: ");
     for(int i=0 ; i<N ; i++)
     {
@@ -19,8 +27,5 @@ int main()
             printf("%d ",arr[i]);
         }
     }
-    printf("\nTotal negative numbers: %d",count);
-
-
     return 0;
 }
