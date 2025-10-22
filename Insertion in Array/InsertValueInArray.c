@@ -1,24 +1,26 @@
 #include<stdio.h>
 int main()
 {
-    int N;
+    int N,idx,val;
+    printf("Enter the size of Array: ");
     scanf("%d",&N);
-    int arr[N+1];
+    int arr[N];
+    printf("Enter the elements of Array: ");
     for(int i=0 ; i<N ; i++)
     {
         scanf("%d",&arr[i]);
     }
-    int idx,val;
+    printf("Enter Position and Value: ");
     scanf("%d %d",&idx,&val);
-    for(int i=N ; i>=idx ; i--)
+    for(int i=N ; i>idx-1 ; i--)
     {
         arr[i] = arr[i-1];
     }
-    arr[idx] = val;
-    for(int i=0 ; i<=N ; i++)
+    arr[idx-1] = val;
+    N++;
+    for(int i=0 ; i<N ; i++)
     {
         printf("%d ",arr[i]);
     }
-
     return 0;
 }
