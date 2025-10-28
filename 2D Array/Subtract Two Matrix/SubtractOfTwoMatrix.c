@@ -26,7 +26,7 @@ int main()
     }
     if(r1!=r2 || c1!=c2)
     {
-        printf("It is not possible to add this two matrix !!!!");
+        printf("It is not possible to subtract this two matrix !!!!");
     }
     else
     {
